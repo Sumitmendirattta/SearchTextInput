@@ -11,10 +11,9 @@ angular.module('myApp.view2', ['ngRoute'])
 
 .controller('View2Ctrl', ['$scope','$http',function($scope, $http) {
 
-	 $http.get("url")
+	 $http.get("https://s3-us-west-2.amazonaws.com/digicode-interview/Q2.json")
     .then(function(response) {
-    	//alert(response.data.images[0]);
-    	//console.log(response.data.images[0]);
+  
         $scope.attachImages = response.data.images;
     });
 

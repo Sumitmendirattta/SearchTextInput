@@ -1,8 +1,9 @@
 {
-  "name": "Angular Assignment",
+  "name": "angular-app",
   "private": true,
   "version": "0.0.0",
-  "description": "Angular JS Assignment",
+  "description": "Angularapp-assignment",
+  "license": "Sumit",
   "devDependencies": {
     "bower": "^1.7.7",
     "http-server": "^0.9.0",

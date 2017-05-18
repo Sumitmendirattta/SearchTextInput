@@ -12,7 +12,7 @@ angular.module('myApp.view1', ['ngRoute'])
 
 .controller('View1Ctrl', ['$scope','$http',function($scope, $http) {
 
-	 $http.get("url")
+	 $http.get("https://s3-us-west-2.amazonaws.com/digicode-interview/Q1.json")
     .then(function(response) {
     	//alert(response.data.recipes);
     	console.log(response.data);
