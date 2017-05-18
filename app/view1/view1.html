@@ -1,0 +1,58 @@
+ 
+<div class="container jumbotron">
+    <div class="row">
+       
+        <div class="col-md-12">
+            <div class="panel panel-default">
+                <div class="panel-body">
+                    <form ng-submit="addNew()">
+ <table class="table table-bordered" >
+    <thead>
+      <tr>
+        <th colspan="4">Recipie Name</th>
+        
+      </tr>
+    </thead>
+    <tbody ng-repeat="story in myWelcome">
+      <tr>
+        <td colspan="4">{{story.name}}  <a id="toggle" class="btn btn-link" ng-init="toggle[$index] = false" ng-click="toggle[$index] = !toggle[$index] ; commentPopup(story.relatedStories)">
+                                        <span class="glyphicon glyphicon-plus-sign" ng-if="!toggle[$index]"></span>
+                                        <span class="glyphicon glyphicon-minus-sign" ng-if="toggle[$index]"></span>
+                                    </a></td>
+                                   
+        
+      </tr>
+       <tr ng-if="toggle[$index]">
+       	
+       	<td colspan="1">
+                                <div ng-repeat="indig in story.Ingredients">
+                                {{indig.name}}
+                                </div>
+                                 </td>
+                                   	<td colspan="1">
+                                <div ng-repeat="indig in story.Ingredients">
+                                {{indig.amount}}
+                                </div>
+                                 </td>
+                                 	<td colspan="1">
+                                <div ng-repeat="indig in story.steps">
+                                {{indig}}
+                                </div>
+                                 </td>
+                                 <td colspan="1">
+                                <div ng-repeat="indig in story.SimilarCuisines">
+                                {{indig}}
+                                </div>
+                                 </td>       
+                            </tr>
+                       
+      
+    </tbody>
+  </table>
+
+  </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
