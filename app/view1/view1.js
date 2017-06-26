@@ -1,3 +1,7 @@
+/* 
+  Created By Sumit Mendiratta
+*/
+
 'use strict';
 
 angular.module('myApp.view1', ['ngRoute'])
@@ -12,11 +16,9 @@ angular.module('myApp.view1', ['ngRoute'])
 
 .controller('View1Ctrl', ['$scope','$http',function($scope, $http) {
 
-	 $http.get("https://s3-us-west-2.amazonaws.com/digicode-interview/Q1.json")
+	 $http.get("https://s3-us-west-2.amazonaws.com/awsproductsumit/products/products.json")
     .then(function(response) {
-    	//alert(response.data.recipes);
-    	console.log(response.data);
-        $scope.myWelcome = response.data.recipes;
+        $scope.products = response.data.products;
     });
 
 }]);

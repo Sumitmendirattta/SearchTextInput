@@ -1,48 +1,73 @@
+<!-- 
+  Created By Sumit Mendiratta
+-->
+
+
+<!------------------------------ Features Added -------------------------------------->
+    <!-- 1. Modal to Display Data in a representable format on Click 
+         2. Responsive design 
+         3. Added Nav Bar at top to Add features and Display Name
+         4. Added meta tags to improve SEO visiblity
+         5. Used AngularJS to make http calls
+         6  Data is fetched from product.json deployed on AWS
+         7. 
+
+--> 
+
 <!DOCTYPE html>
 
 <html lang="en" ng-app="myApp" class="no-js"> 
 <head>
-  <meta charset="utf-8">
+
+  <meta charset="UTF-8">
+  <!-- Define a description of your web page-->
+  <meta name="description" content="Single page app that allows us users to search for financial institutions of their interest">
+  <!-- Describe Keyword for search engines-->
+  <meta name="keywords" content="Personal Capital, Assignment,FrontEnd, Search">
+  <!-- Describe Author Name-->
+  <meta name="author" content="Sumit Mendiratta">
+  <!-- Refresh document every 30 seconds Not Required Since we have static data-->
+  <meta http-equiv="refresh" content="30">
+  <!--  Setting the viewport to make your website look good on all devices-->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- Add Page Title-->
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <title>Assignment</title>
-  <meta name="description" content="">
+  <title>Personal Capital</title>
+  <link rel="stylesheet" href="style/autocomplete.css">
+
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="stylesheet" href="bower_components/html5-boilerplate/dist/css/normalize.css">
-  <link rel="stylesheet" href="bower_components/html5-boilerplate/dist/css/main.css">
   <link rel="stylesheet" href="app.css">
-  <script src="bower_components/html5-boilerplate/dist/js/vendor/modernizr-2.8.3.min.js"></script>
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+  
+
 </head>
 <body >
 
   <nav class="navbar navbar-inverse bg-primary">
-  <div class="container-fluid">
-    <div class="navbar-header">
-      <a class="navbar-brand" href="#">Assignment</a>
+    <div class="container-fluid">
+      <div class="navbar-header">
+        <a class="navbar-brand" href="#">Personal Capital Assignment</a>
+      </div>
+      <ul class="nav navbar-nav">
+
+        <li><a class="active" href="#!/view1">Product Data</a></li>
+      </ul>
+
     </div>
-    <ul class="nav navbar-nav">
-      
-      <li><a class="active" href="#!/view1">Table Data</a></li>
-      <li><a href="#!/view2">Images</a></li>
-    </ul>
-    
-  </div>
-</nav>
-
- 
-
+  </nav>
 
   <div ng-view></div>
 
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
   <script src="bower_components/angular/angular.js"></script>
   <script src="bower_components/angular-route/angular-route.js"></script>
   <script src="app.js"></script>
   <script src="view1/view1.js"></script>
-  <script src="view2/view2.js"></script>
   <script src="components/version/version.js"></script>
   <script src="components/version/version-directive.js"></script>
   <script src="components/version/interpolate-filter.js"></script>
+
 </body>
 </html>

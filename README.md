@@ -1,5 +1,8 @@
-Given some data, design and write a website(one or more pages) to show ALL details of all data
-Given image links and their corresponding descriptions, design and write a web page to show all images
+A single page app that allows us users to search for financial institutions of their interest. 
+
+The app contain a text input. When the user enters some text into the text input, the app should use the provided data feed to search product names for the term the user entered into the text input. 
+
+When the results are returned you should display the results in the same page. 
 
 
 Single Page Application
@@ -17,3 +20,6 @@ Images for Image data
 Technologies used:
 Angular JS, HTML, CSS, Bootstrap
 Node JS, NPM
+
+Page automatically refreshes data after every 30 seconds in any changes are made 
+JSON file deployed on AWS
