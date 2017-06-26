@@ -4,7 +4,6 @@ The app contain a text input. When the user enters some text into the text input
 
 When the results are returned you should display the results in the same page. 
 
-
 Single Page Application
 
 Steps to Run:
@@ -12,11 +11,9 @@ Steps to Run:
 2.	Command: npm start
 3.	After node server is running on localhost
 4.	Goto: http://localhost:8000 in browser
-5.	Navigate between pages using buttons in nav bar at top
-Table data is to represent table
-Images for Image data
-6.	For chrome need to install CORS plugin or do CORS server setting in server from where data is fetched.
-7.	For other browser, no need to setup CORS plugin
+5.	For chrome need to install CORS plugin or do CORS server setting in server from where data is fetched.
+6.	For other browser, no need to setup CORS plugin
+
 Technologies used:
 Angular JS, HTML, CSS, Bootstrap
 Node JS, NPM
