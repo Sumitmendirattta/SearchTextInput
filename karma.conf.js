@@ -12,6 +12,7 @@ module.exports = function(config) {
       'view*/**/*.js'
     ],
 
+   
     autoWatch: true,
 
     frameworks: ['jasmine'],
